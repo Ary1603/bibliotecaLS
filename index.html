@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Mi biblioteca</title>
+</head>
+<body>
+    <header>
+        <h1>Biblioteca de media noche</h1>
+    </header>
+
+    <!-- Form de libros -->
+    <div class="form-book">
+        <h2 class="form-phrase">Uno mas a la cuenta !!!</h2>
+        <div class="triangulo"></div>
+        <div class="container-form">
+            <h2 class="title-form">Sube tu libro aqui</h2>
+            <span class="span-form">Nombre: </span>
+            <input id="input-nombre" type="text" placeholder="Nombre del libro">
+            <span class="span-form">Autor: </span>
+            <input id="input-autor" type="text" placeholder="Autor del libro">
+            <span class="span-form">Url img: </span>
+            <input id="input-img" type="text" placeholder="Url de la imagen del libro">
+            <span class="span-form" >Comentario: </span>
+            <textarea name="" id="input-comentario" cols="30" rows="3" style="resize: none;"></textarea>
+            <button class="btn-subir" onclick="subirLibro()">Subir</button>
+        </div>
+    </div>
+
+    <!-- Form editar libro -->
+    <div class="form-editar">
+        <img src="https://cdn-icons-png.flaticon.com/512/6745/6745445.png" alt="" class="img-cambio">
+        <div class="container-cambios">
+            <h2 id="titulo-cambios">Cambios a tu libro</h2>
+            <p>Titulo: </p>
+            <input type="text" id="titulo-editado" placeholder="Nombre del libro">
+            <p>Autor: </p>
+            <input type="text" id="autor-editado" placeholder="Nombre del autor">
+            <p>Imagen: </p>
+            <input type="text" id="imagen-editado" placeholder="Nueva foto">
+            <p>Comentario: </p>
+            <textarea name="" id="comentario-editado" cols="30" rows="3" style="resize: none;"></textarea>
+        </div>
+        <button id="editar">Editar</button>
+    </div>
+    <div class="conatiner-books"></div>
+    <footer><p>© 2022 Adrian Coronado Hernandez</p> </footer>
+    <button class="btn-agregar" onclick="agregar(event)">+</button>
+    <script src="index.js"></script>
+</body>
+</html>
